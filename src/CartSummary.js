@@ -23,6 +23,6 @@ render {
       {summary}
       );
   }
-}
+
 
 export default CartSummary;
