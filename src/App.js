@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import CartSummary, { Component } from "CartSummary.js";
-import CartTotal, { Component } from "CartTotal.js";
+import React from "react";
+import CartSummary from "CartSummary";
+import CartTotal from "CartTotal";
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
