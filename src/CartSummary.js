@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+class CartSummary extends component{
+render() {
 const summary = Object.keys(this.state.selected).map((feature, idx) => {
   const featureHash = feature + "-" + idx;
   const selectedOption = this.state.selected[feature];
@@ -12,7 +14,7 @@ const summary = Object.keys(this.state.selected).map((feature, idx) => {
         {USCurrencyFormat.format(selectedOption.cost)}
       </div>
     </div>
-  );
-});
+);
+})
 
 export default CartSummary;
