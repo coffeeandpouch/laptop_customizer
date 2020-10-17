@@ -1,7 +1,7 @@
 import React from "react";
 
 class CartSummary extends component{
-render {
+render () {
 
      const summary = Object.keys(this.state.selected).map((feature, idx) => {
          const featureHash = feature + "-" + idx;
