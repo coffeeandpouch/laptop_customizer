@@ -68,10 +68,8 @@ class App extends Component {
           {options}
         </fieldset>
       );
-      });
-    
-  
-    
+    });
+  }
+}
 
-    
 export default App;
