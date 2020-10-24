@@ -4,7 +4,7 @@ import React from "react";
 // in both URLs and html attributes
 import slugify from "slugify";
 
-export default function Features(props) {
+export default function MainForm(props) {
   const { USCurrencyFormat, selected, features } = props;
 
   return Object.keys(features).map((feature, idx) => {
