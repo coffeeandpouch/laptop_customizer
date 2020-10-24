@@ -1,12 +1,20 @@
 import React from "react";
-import SummaryItem from "./components/SummaryItem/SUmmaryItem";
+
 export default function Summary(props) {
-  const { USCurrencyFormat, selected } = props;
+  const { USCurrencyFormat } = props;
 
-  return Object.keys(selected).map((feature, idx) => {
+  return Object.keys(this.state.selected).map((feature, idx) => {
     const featureHash = feature + "-" + idx;
-    const selectedOption = selected[feature];
+    const selectedOption = this.state.selected[feature];
 
-    return <div>{<SummaryItem />}</div>;
+    return (
+      <div className="summary__option" key={featureHash}>
+        <div className="summary__option__label">{feature} </div>
+        <div className="summary__option__value">{selectedOption.name}</div>
+        <div className="summary__option__cost">
+          {USCurrencyFormat.format(selectedOption.cost)}
+        </div>
+      </div>
+    );
   });
 }
